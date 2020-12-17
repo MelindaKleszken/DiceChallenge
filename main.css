@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+}
 
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(16, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 10px;
+    width: 400px;
+}
+
+.player-name, .points, .dice-image, .roll-button {
+    align-items: center;
+    margin: 15px;
+}
+
+.player-name, .points, .button {
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+#dice{
+    height: 150px;
+    display: none;
+}
