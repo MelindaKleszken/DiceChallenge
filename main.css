@@ -23,16 +23,19 @@ body{
     width: 400px;
 }
 
-.player-name, .points, .dice-image, .roll-button {
+#player-name, #points, .dice-image, .roll-button {
     align-items: center;
     margin: 15px;
 }
 
-.player-name, .points, .button {
+#player-name, #points, #roll {
     align-items: center;
     font-family: 'Press Start 2P', cursive;
 }
 
+.dice-image{
+    height: 150px;
+}
 
 #dice{
     height: 150px;
