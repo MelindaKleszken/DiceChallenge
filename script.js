@@ -6,7 +6,7 @@ console.log(image.style);
 
 
 button.addEventListener("click", ()=>{
-    if (button.innerHTML == "Play" || button.innerHTML == "Play Again?" ) {
+    if (button.innerHTML == "Play" || button.innerHTML == "New game" ) {
         image.style.display = "block";
         button.innerHTML = "Roll";
         player.innerHTML = "Player 1";
@@ -17,14 +17,14 @@ button.addEventListener("click", ()=>{
     image.src = `./img/dice${x}.png`;
     
     if (x === 1) {
-        player.innerHTML = "You Lost!";
-        button.innerHTML = "Play Again?";
+        player.innerHTML = "Sorry, you lost!";
+        button.innerHTML = "New game";
     } else if (points.innerHTML < 20) {
         y += x;
         points.innerHTML = y
     }
     if (y >= 20) {
         player.innerHTML = "Winner!";
-        button.innerHTML = "Play Again?";
+        button.innerHTML = "New game";
     }
 })
